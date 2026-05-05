@@ -21,27 +21,21 @@ public class Invoice {
     @Column(nullable = false)
     private String customerName;
 
-    // [DOM-01] VIOLATION: monetary field uses primitive double
     @Column(nullable = false)
     private double unitPrice;
-
-    // [DOM-01] VIOLATION: quantity used in money math — should be int or BigDecimal
+  
     @Column(nullable = false)
-    private double quantity;
-
-    // [DOM-01] VIOLATION: tax rate as float introduces compounding rounding
+    private double quantity
+    
     @Column(nullable = false)
     private float taxRate;
-
-    // [DOM-01] VIOLATION: discount amount as double
+ 
     @Column(nullable = false)
     private double discountAmount;
-
-    // [DOM-01] VIOLATION: total amount as Double wrapper — same problem
+ 
     @Column(nullable = false)
     private Double totalAmount;
 
-    // [DOM-01] VIOLATION: account balance as double
     @Column(nullable = false)
     private double accountBalance;
 
