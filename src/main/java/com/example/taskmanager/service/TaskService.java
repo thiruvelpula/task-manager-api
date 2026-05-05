@@ -18,7 +18,7 @@ public class TaskService {
     public List<Task> getAllTasks() {
         return taskRepository.findAll();
     }
-
+    // Retrive Task details based on the status
     public List<Task> getTasksByStatus(Task.Status status) {
         return taskRepository.findByStatus(status);
     }
