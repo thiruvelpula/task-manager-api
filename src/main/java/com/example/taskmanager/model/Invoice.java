@@ -25,7 +25,7 @@ public class Invoice {
     private double unitPrice;
   
     @Column(nullable = false)
-    private double quantity
+    private double quantity;
     
     @Column(nullable = false)
     private float taxRate;
