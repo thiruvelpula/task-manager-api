@@ -22,23 +22,23 @@ public class Invoice {
     private String customerName;
 
     @Column(nullable = false)
-    private double unitPrice;
-  
+    private BigDecimal unitPrice;
+
     @Column(nullable = false)
-    private double quantity;
+    private BigDecimal quantity;
     
     @Column(nullable = false)
-    private float taxRate;
- 
+    private BigDecimal taxRate;
+    
     @Column(nullable = false)
-    private double discountAmount;
- 
+    private BigDecimal discountAmount;
+    
     @Column(nullable = false)
-    private Double totalAmount;
-
+    private BigDecimal totalAmount;
+    
     @Column(nullable = false)
-    private double accountBalance;
-
+    private BigDecimal accountBalance;
+    
     @Column(nullable = false)
     private LocalDateTime createdAt;
 
